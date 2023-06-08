@@ -33,7 +33,7 @@ class ApplicationController extends Controller
         $request->validate([
             'full_names' => ['required', 'max:255'],
             'email' => ['required', 'max:255'],
-            'image' => ['required|image|mimes:jpeg,png,jpg,gif,svg'],
+            'image' => ['required', 'image', 'max:255', 'mimes:png,jpg,jpeg'],
             'app_type' => ['required', 'max:255'],
             'amount' => ['required', 'max:255'],
             'comments' => ['required'],
