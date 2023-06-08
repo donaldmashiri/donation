@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 <!-- Site Metas -->
-<title>CITY Real Estate - Responsive HTML5 Landing Page Template</title>
+<title>Crowd Funding</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="">
@@ -42,11 +42,7 @@
 </head>
 <body class="realestate_version">
 
-<!-- LOADER -->
-<div id="preloader">
-    <span class="loader"><span class="loader-inner"></span></span>
-</div><!-- end loader -->
-<!-- END LOADER -->
+
 
 <header class="header header_style_01">
     <nav class="megamenu navbar navbar-default">
@@ -63,18 +59,10 @@
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a class="active" href="/">Home</a></li>
-                    <li><a href="/application">Application</a></li>
+                    <li><a href="{{ route('applications.create') }}">Application</a></li>
                     <li><a href="/story">Stories</a></li>
-                    <li class="social-links"><a href="#"><i class="fa fa-twitter global-radius"></i></a></li>
-                    <li class="social-links"><a href="#"><i class="fa fa-facebook global-radius"></i></a></li>
-                    <li class="social-links"><a href="#"><i class="fa fa-linkedin global-radius"></i></a></li>
-                    <li class="search-option">
-                        <button class="search tran3s dropdown-toggle" id="searchDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-search" aria-hidden="true"></i></button>
-                        <form action="#" class="p-color-bg dropdown-menu tran3s" aria-labelledby="searchDropdown">
-                            <input type="text" placeholder="Search....">
-                            <button class="p-color-bg"><i class="fa fa-search" aria-hidden="true"></i></button>
-                        </form>
-                    </li>
+                    <li><a href="/login" class="btn btn-success">Admin</a></li>
+
                 </ul>
             </div>
         </div>
