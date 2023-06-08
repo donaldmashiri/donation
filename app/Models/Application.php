@@ -16,5 +16,6 @@ class Application extends Model
         'comments',
         'app_type',
         'amount',
+        'status',
     ];
 }

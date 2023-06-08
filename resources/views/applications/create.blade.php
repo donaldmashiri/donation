@@ -15,6 +15,8 @@
                     <div class="col-md-12">
                         <div class="contact_form">
                             <div id="message"></div>
+                            @include('partials.errors')
+{{--                            <h4 class="alert alert-success">Application was Successfully</h4>--}}
                             <form action="{{ route('applications.store') }}" method="POST" enctype="multipart/form-data">
                                 @csrf
                                 {{--                            <form id="contactform" class="row" action="contact.php" name="contactform" method="post">--}}
@@ -50,7 +52,7 @@
                                         <textarea class="form-control" name="comments" id="comments" rows="6" placeholder="Give us more details.."></textarea>
                                     </div>
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-                                        <button type="submit" value="SEND" id="submit" class="btn btn-light btn-radius btn-brd grd1 btn-block">Submit Application</button>
+                                        <button type="submit" id="submit" class="btn btn-light btn-radius btn-brd grd1 btn-block">Submit Application</button>
                                     </div>
                                 </fieldset>
                             </form>

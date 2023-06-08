@@ -30,9 +30,19 @@ class ApplicationController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'full_names' => ['required', 'max:255'],
+            'email' => ['required', 'max:255'],
+            'image' => ['required', 'max:255'],
+            'app_type' => ['required', 'max:255'],
+            'amount' => ['required', 'max:255'],
+            'comments' => ['required'],
+        ]);
+
+
         $image = $request->image->store('images');
         // create the post
-        $post = Application::create([
+        $apply = Application::create([
             'full_names' => $request->full_names,
             'email' => $request->email,
             'image' => $image,
@@ -41,16 +51,11 @@ class ApplicationController extends Controller
             'comments' => $request->comments,
         ]);
 
-        if($request->tags)
-        {
-            $post->tags()->attach($request->tags);
-        }
-
         // flash post
-        session()->flash('success', 'Post created Successfully.');
+        session()->flash('success', 'Application Successfully.');
 
         // redirect user
-        return redirect(route('posts.index'));
+        return redirect(route('applications.index'));
     }
 
     /**

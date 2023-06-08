@@ -40,7 +40,7 @@
                         <div class="pull-right">
 								<span class="prop-date">
 									<i class="fa fa-calendar" aria-hidden="true"></i>
-									<button type="submit" class="btn btn-danger">Donate</button>
+									<a href="https://www.paynow.co.zw/user/login" type="submit" class="btn btn-danger">Donate</a>
 								</span>
                         </div>
                     </div>
@@ -77,7 +77,7 @@
                                      <div class="pull-right">
 								<span class="prop-date">
 									<i class="fa fa-calendar" aria-hidden="true"></i>
-									<button type="submit" class="btn btn-danger">Donate</button>
+									<a href="https://www.paynow.co.zw/user/login" type="submit" class="btn btn-danger">Donate</a>
 								</span>
                                      </div>
                                  </div>
@@ -114,7 +114,7 @@
                                      <div class="pull-right">
 								<span class="prop-date">
 									<i class="fa fa-calendar" aria-hidden="true"></i>
-									<button type="submit" class="btn btn-danger">Donate</button>
+									<a href="https://www.paynow.co.zw/user/login" type="submit" class="btn btn-danger">Donate</a>
 								</span>
                                      </div>
                                  </div>

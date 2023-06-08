@@ -15,10 +15,11 @@ return new class extends Migration
             $table->id();
             $table->string('full_names');
             $table->string('email');
-            $table->string('image');
-            $table->string('comments');
+            $table->text('image');
+            $table->text('comments');
             $table->string('app_type');
             $table->string('amount');
+            $table->string('status')->nullable();
             $table->timestamps();
         });
     }
