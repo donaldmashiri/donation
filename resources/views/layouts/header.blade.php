@@ -31,6 +31,8 @@
 <!-- Custom CSS -->
 <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.17/dist/sweetalert2.min.css">
+
 <!-- Modernizer for Portfolio -->
 <script src="{{ asset('js/modernizer.js') }}"></script>
 
@@ -60,7 +62,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a class="active" href="/">Home</a></li>
                     <li><a href="{{ route('applications.create') }}">Application</a></li>
-                    <li><a href="/story">Stories</a></li>
+                    <li><a href="{{ route('stories.index') }}">Stories</a></li>
                     <li><a href="/login" class="btn btn-success">Admin</a></li>
 
                 </ul>
@@ -76,74 +78,14 @@
 
 
 <footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 col-sm-4 col-xs-12">
-                <div class="widget clearfix">
-                    <div class="widget-title">
-                        <img src="{{ asset('images/gofund2.jpg') }}" width="100" height="50" alt="">
-                    </div>
-                    <p> .</p>
-                    <p>Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis dis montes.</p>
-                </div><!-- end clearfix -->
-            </div><!-- end col -->
 
-            <div class="col-md-3 col-sm-3 col-xs-12">
-                <div class="widget clearfix">
-                    <div class="widget-title">
-                        <h3>Info Link</h3>
-                    </div>
-
-                    <ul class="twitter-widget footer-links">
-                        <li><a href="#"> Home </a></li>
-                        <li><a href="#"> About Us </a></li>
-                        <li><a href="#"> Services</a></li>
-                        <li><a href="#"> Gallery</a></li>
-                        <li><a href="#"> Properties</a></li>
-                        <li><a href="#"> Contact</a></li>
-                    </ul><!-- end links -->
-                </div><!-- end clearfix -->
-            </div><!-- end col -->
-
-            <div class="col-md-3 col-sm-3 col-xs-12">
-                <div class="widget clearfix">
-                    <div class="widget-title">
-                        <h3>Contact Details</h3>
-                    </div>
-
-                    <ul class="footer-links">
-                        <li><a href="mailto:#">info@yoursite.com</a></li>
-                        <li><a href="#">www.yoursite.com</a></li>
-                        <li>PO Box 16122 Collins Street West Victoria 8007 Australia</li>
-                        <li>+61 3 8376 6284</li>
-                    </ul><!-- end links -->
-                </div><!-- end clearfix -->
-            </div><!-- end col -->
-
-            <div class="col-md-2 col-sm-2 col-xs-12">
-                <div class="widget clearfix">
-                    <div class="widget-title">
-                        <h3>Social</h3>
-                    </div>
-                    <ul class="footer-links">
-                        <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
-                        <li><a href="#"><i class="fa fa-github"></i> Github</a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
-                        <li><a href="#"><i class="fa fa-dribbble"></i> Dribbble</a></li>
-                        <li><a href="#"><i class="fa fa-pinterest"></i> Pinterest</a></li>
-                    </ul><!-- end links -->
-                </div><!-- end clearfix -->
-            </div><!-- end col -->
-
-        </div><!-- end row -->
-    </div><!-- end container -->
 </footer><!-- end footer -->
 
 <div class="copyrights">
     <div class="container">
         <div class="footer-distributed">
             <div class="footer-left">
-                <p class="footer-company-name">Design By : <a href="https://html.design/">HTML design</a> Re-distribution by <a href="https://themewagon.com/" target="_blank">Themewagon</a> All Rights Reserved. &copy; 2018 </p>
+                <p class="footer-company-name">Design By : <a href="https://html.design/">Talent All Rights Reserved. &copy; 2023 </p>
             </div>
 
             <div class="footer-right">
@@ -157,6 +99,11 @@
 </div><!-- end copyrights -->
 
 <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- SweetAlert JS -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.17/dist/sweetalert2.min.js"></script>
 
 <!-- ALL JS FILES -->
 <script src="js/all.js"></script>

@@ -79,7 +79,11 @@ class ApplicationController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $apply = Application::findOrFail($id);
+        $apply->status = $request->input('status');
+        $apply->save();
+
+        return redirect()->back()->with('status', 'Application responded');
     }
 
     /**

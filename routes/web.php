@@ -21,11 +21,13 @@ Route::get('/application', function () {
     return view('application');
 });
 
-Route::get('/story', function () {
-    return view('story');
-});
+//Route::get('/story', function () {
+//    return view('story');
+//});
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+//Route::get('/stories', [App\Http\Controllers\HomeController::class, 'stories'])->name('home');
 Route::resource('applications', \App\Http\Controllers\ApplicationController::class);
+Route::resource('stories', \App\Http\Controllers\StoriesController::class);
